@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "string.h"
 void Pivot(int *A,int left,int right){// function to choose a pivot in order to make the pivot not a too big or too small number
     int center = (left+right)/2;
     int temp;
