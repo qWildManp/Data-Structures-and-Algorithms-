@@ -83,11 +83,7 @@ Node *deleteNode(Node **proot, int x) {//delete a node from the BST
                 }
             }
             findNode->key = tempNode->key;//exchange the value
-            if (tempPrevious == findNode) {
-                tempPrevious->right = NULL;
-            } else {
-                tempPrevious->left = NULL;
-            }
+            tempPrevious->left = tempNode->right;
             return tempNode;
         }
     }
